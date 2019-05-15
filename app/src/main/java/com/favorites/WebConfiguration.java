@@ -1,5 +1,7 @@
 package com.favorites;
 
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
+import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -7,6 +9,7 @@ import org.springframework.context.annotation.Configuration;
 import com.favorites.comm.filter.SecurityFilter;
 
 @Configuration
+@EnableAutoConfiguration()
 public class WebConfiguration  {
 	
     @Bean
